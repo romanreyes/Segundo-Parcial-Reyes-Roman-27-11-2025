@@ -146,7 +146,6 @@ void MainWindow::integral()
     time_values.append(tmax);
     batery_values.append(batery_tmax);
 
-    // integración trapezoidal sobre la malla tvals/bvals
     double suma = 0.0;
     for (int i = 0; i < time_values.size() - 1; ++i) {
         double dt = time_values[i + 1] - time_values[i];
